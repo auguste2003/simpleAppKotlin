@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:visibility="visible">
+    <!--   style="@style/Default_style" peut etre un Style crßeer au préalable -->
+    <!-- Appliquer le style ici -->
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:text="@string/app_name"
+
+         />
+<!--
+ app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"-->
+    <TextView
+        android:id="@+id/page_title"
+        style="@style/BoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="5dp"
+
+        android:text="@string/home_page_title"
+        />
+    <!--
+
+     app:layout_constraintStart_toStartOf="@+id/app_title"
+        app:layout_constraintTop_toBottomOf="@+id/app_title
+    comme un container qui prend toute la place  -->
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+         />
+</LinearLayout>
